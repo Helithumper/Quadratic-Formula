@@ -19,7 +19,7 @@ public class Utilities {
 	 * @param Message
 	 *            that you want to display in the error window
 	 * @param Title
-	 *            of the Error Windowlkas
+	 *            of the Error Window
 	 */
 	public static void throwErrorBox(String message, String title) {
 		JOptionPane.showMessageDialog(new JFrame(), message, title,
