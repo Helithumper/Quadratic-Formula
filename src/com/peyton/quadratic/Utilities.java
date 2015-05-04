@@ -30,5 +30,9 @@ public class Utilities {
 	 * Main font for most texts
 	 */
 	public static final Font TEXT_FONT = new Font("Serif", Font.BOLD, 16);
+	
+	public static Font getFont(int size){
+		return new Font("Serif", Font.BOLD, size);
+	}
 
 }

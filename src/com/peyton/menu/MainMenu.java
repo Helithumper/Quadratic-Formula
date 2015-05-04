@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 import com.peyton.quadratic.QuadPanel;
 import com.peyton.quadratic.Utilities;
@@ -25,11 +26,12 @@ public class MainMenu extends JFrame implements ActionListener{
 	
 	private void instantiateFrame(){
 		
-		setMinimumSize(new Dimension(300,400));
+		setMinimumSize(new Dimension(300,200));
 		mainPanel = new JPanel();
 		mainPanel.setLayout(new GridLayout(2,1));
 		titleText = new JLabel("Peyton's Calculator");
-		titleText.setFont(Utilities.TEXT_FONT);
+		titleText.setFont(Utilities.getFont(32));
+		titleText.setHorizontalAlignment(SwingConstants.CENTER);
 		quadraticButton = new JButton ("Quadratic Formula Calculator");
 		quadraticButton.addActionListener(this);
 		mainPanel.add(titleText);
